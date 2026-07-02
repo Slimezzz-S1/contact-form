@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Karla";
+  src: url('./assets/fonts/static/Karla-Regular.ttf') format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url('./assets/fonts/static/Karla-Bold.ttf') format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 @theme {
   --color-root : #e0f1e7;
   --color-form : #fff;
@@ -11,6 +25,8 @@
 
   --animate-slide-up: slideUp 0.5s ease-out forwards;
   --animate-slide-down: slideDown 0.5s ease-out forwards;
+
+  --font-sans : "Karla", sans-serif;
 }
 
 html {

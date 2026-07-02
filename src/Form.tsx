@@ -129,10 +129,10 @@ function FormInput(props: inputTypeProps) {
     return (
         <div className={className ?? "flex flex-col gap-2"}>
             {props.type != "checkbox" && (
-                <h3 className="font-medium">
+                <h3 className="font-semibold">
                     {title} 
 
-                    <span className="text-accent">
+                    <span className="text-accent ml-2">
                         *
                     </span>
                 </h3>
@@ -154,7 +154,7 @@ function FormInput(props: inputTypeProps) {
                     <label className="font-medium1 w-full" htmlFor={props.id}>
                         {title} 
 
-                        <span className="text-accent">
+                        <span className="text-accent ml-2">
                             *
                         </span>
                     </label>
