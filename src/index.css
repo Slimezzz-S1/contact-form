@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-root : #e0f1e7;
+  --color-form : #fff;
+  --color-text : #32423d;
+  --color-accent : #0c7d68;
+  --color-accent-hover : #063f36;
+  --color-accent-radio : #e0f1e7;
+  --color-notification : #2a4244;
+
+  --animate-slide-up: slideUp 0.5s ease-out forwards;
+  --animate-slide-down: slideDown 0.5s ease-out forwards;
+}
+
+html {
+  @apply scrollbar-gutter-stable
+}
+
+body {
+  @apply relative min-h-screen w-screen bg-root text-text
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-120%);
+  } to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+  } to {
+    transform: translateY(-120%);
+  }
+}
+
