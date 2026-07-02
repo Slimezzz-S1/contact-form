@@ -226,7 +226,7 @@ export function Notification({onDone} : {onDone : () => void}) {
     }, [])
 
     return createPortal(
-        <div className="absolute top-0 left-0 w-screen h-screen pointer-events-none flex justify-center pt-4">
+        <div className="fixed top-0 left-0 w-screen h-screen pointer-events-none flex justify-center pt-4">
             <div className={"w-fit h-fit pointer-events-auto bg-notification text-white p-5 rounded-lg transition-transform " + (isEnding ? "animate-slide-up" : "animate-slide-down")} onAnimationEnd={isEnding ? onDone : () => {}}>
                 <div>
                     <div className="flex gap-2 items-center">

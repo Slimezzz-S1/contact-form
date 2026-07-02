@@ -5,8 +5,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        // This maps 'font-karla' to your local CSS font-family name
+      fontFamily: {        
         karla: ['Karla', 'sans-serif'], 
       },
     },
